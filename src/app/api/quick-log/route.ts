@@ -45,7 +45,7 @@ export const POST = apiHandler(
     }
 
     try {
-      new Intl.DateTimeFormat(parsed.data.timezone);
+      new Intl.DateTimeFormat("en-US", { timeZone: parsed.data.timezone });
     } catch {
       return apiError("Unknown timezone", 400);
     }
