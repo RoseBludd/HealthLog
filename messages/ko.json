@@ -11413,5 +11413,16 @@
     "linkedLabel": "연결된 기록",
     "conditionSince": "{onset}부터",
     "conditionDates": "{onset} ~ {resolved}"
+  },
+  "quickLog": {
+    "title": "빠른 기록",
+    "placeholder": "무엇이든 기록 — 예: 혈압 128/82, 식은 후 110, 리시노프릴 8시 복용",
+    "submit": "기록",
+    "submitting": "기록 중…",
+    "unparsed": "입력을 기록으로 변환하지 못했습니다 — 측정값이나 약 이름으로 다시 시도하세요",
+    "failed": "기록 중 문제가 발생했습니다. 다시 시도하세요.",
+    "micLabel": "음성 입력",
+    "listening": "듣는 중…",
+    "confirmed": "기록됨"
   }
 }

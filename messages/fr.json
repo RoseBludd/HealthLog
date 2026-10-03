@@ -11413,5 +11413,16 @@
     "linkedLabel": "Éléments liés",
     "conditionSince": "Depuis le {onset}",
     "conditionDates": "Du {onset} au {resolved}"
+  },
+  "quickLog": {
+    "title": "Saisie rapide",
+    "placeholder": "Notez ce que vous voulez — ex. TA 128/82, sucre 110 après le petit-déjeuner, pris lisinopril à 8h",
+    "submit": "Noter",
+    "submitting": "Enregistrement…",
+    "unparsed": "Je n’ai pas pu transformer cela en entrée — essayez une mesure ou un médicament",
+    "failed": "Une erreur est survenue lors de l’enregistrement. Réessayez.",
+    "micLabel": "Saisie vocale",
+    "listening": "Écoute…",
+    "confirmed": "Noté"
   }
 }

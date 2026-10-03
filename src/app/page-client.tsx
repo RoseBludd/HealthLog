@@ -56,6 +56,7 @@ import {
   QuickEntrySheets,
   type QuickEntryDialog,
 } from "@/components/dashboard/quick-entry-sheets";
+import { QuickLogComposer } from "@/components/dashboard/quick-log-composer";
 import {
   getRangeColorClass,
   getRangeHint,
@@ -972,6 +973,9 @@ export default function DashboardPageClient({
         open={quickEntryDialog}
         onClose={() => setQuickEntryDialog(null)}
       />
+
+      {/* Quick Log — natural-language one-box entry (WO-HLMED-002). */}
+      <QuickLogComposer />
 
       {(() => {
         type TrendEntry = { id: string; order: number; node: React.ReactNode };

@@ -11413,5 +11413,16 @@
     "linkedLabel": "Voci collegate",
     "conditionSince": "Dal {onset}",
     "conditionDates": "Dal {onset} al {resolved}"
+  },
+  "quickLog": {
+    "title": "Registro rapido",
+    "placeholder": "Registra qualsiasi cosa — es. PA 128/82, zucchero 110 dopo colazione, preso lisinopril alle 8",
+    "submit": "Registra",
+    "submitting": "Registrazione…",
+    "unparsed": "Non sono riuscito a trasformarlo in una voce — prova con una misurazione o un farmaco",
+    "failed": "Errore durante la registrazione. Riprova.",
+    "micLabel": "Input vocale",
+    "listening": "In ascolto…",
+    "confirmed": "Registrato"
   }
 }

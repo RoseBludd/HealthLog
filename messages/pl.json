@@ -11413,5 +11413,16 @@
     "linkedLabel": "Powiązane wpisy",
     "conditionSince": "Od {onset}",
     "conditionDates": "Od {onset} do {resolved}"
+  },
+  "quickLog": {
+    "title": "Szybki zapis",
+    "placeholder": "Zapisz cokolwiek — np. RR 128/82, cukier 110 po śniadaniu, wzięty lisinopril o 8",
+    "submit": "Zapisz",
+    "submitting": "Zapisywanie…",
+    "unparsed": "Nie udało się zamienić tego na wpis — spróbuj pomiaru lub leku",
+    "failed": "Coś poszło nie tak podczas zapisu. Spróbuj ponownie.",
+    "micLabel": "Wprowadzanie głosowe",
+    "listening": "Słucham…",
+    "confirmed": "Zapisano"
   }
 }

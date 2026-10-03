@@ -394,6 +394,9 @@ x-healthlog-env: &healthlog_env
   # which is the escape hatch when a prefetch is misbehaving on your host.
   DASHBOARD_SSR_PREFETCH: "${DASHBOARD_SSR_PREFETCH:-}"
 
+  # CADIS Quick-Log (WO-HLMED-002): server-side token for the NL parser; injected from /opt/healthlog/.env
+  CADIS_API_TOKEN: "${CADIS_API_TOKEN:-}"
+  CADIS_BASE_URL: "${CADIS_BASE_URL:-https://cadis.geniuzs.com/v1}"
 services:
   # Single-container default (HEALTHLOG_PROCESS_TYPE=all). Existing
   # self-host deployments stay working with `docker compose up`.

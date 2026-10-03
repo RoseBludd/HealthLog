@@ -11413,5 +11413,16 @@
     "linkedLabel": "Verknüpfte Einträge",
     "conditionSince": "Seit {onset}",
     "conditionDates": "{onset} bis {resolved}"
+  },
+  "quickLog": {
+    "title": "Schnellerfassung",
+    "placeholder": "Alles erfassen — z. B. Blutdruck 128/82, Zucker 110 nach dem Frühstück, Lisinopril um 8 Uhr genommen",
+    "submit": "Erfassen",
+    "submitting": "Wird erfasst…",
+    "unparsed": "Das konnte ich keinem Eintrag zuordnen — versuche eine Messung oder ein Medikament",
+    "failed": "Beim Erfassen ist etwas schiefgegangen. Bitte erneut versuchen.",
+    "micLabel": "Spracheingabe",
+    "listening": "Hört zu…",
+    "confirmed": "Erfasst"
   }
 }

@@ -11413,5 +11413,16 @@
     "linkedLabel": "Linked records",
     "conditionSince": "Since {onset}",
     "conditionDates": "{onset} to {resolved}"
+  },
+  "quickLog": {
+    "title": "Quick log",
+    "placeholder": "Log anything — e.g. BP 128/82, sugar 110 after breakfast, took lisinopril at 8am",
+    "submit": "Log",
+    "submitting": "Logging…",
+    "unparsed": "I couldn’t turn that into an entry — try a measurement or a medication",
+    "failed": "Something went wrong logging that. Please try again.",
+    "micLabel": "Voice input",
+    "listening": "Listening…",
+    "confirmed": "Logged"
   }
 }

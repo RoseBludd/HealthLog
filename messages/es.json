@@ -11413,5 +11413,16 @@
     "linkedLabel": "Registros vinculados",
     "conditionSince": "Desde el {onset}",
     "conditionDates": "Del {onset} al {resolved}"
+  },
+  "quickLog": {
+    "title": "Registro rápido",
+    "placeholder": "Registra lo que quieras — p. ej. PA 128/82, azúcar 110 después del desayuno, tomé lisinopril a las 8",
+    "submit": "Registrar",
+    "submitting": "Registrando…",
+    "unparsed": "No pude convertir eso en una entrada — prueba con una medición o un medicamento",
+    "failed": "Algo falló al registrar. Inténtalo de nuevo.",
+    "micLabel": "Entrada de voz",
+    "listening": "Escuchando…",
+    "confirmed": "Registrado"
   }
 }
