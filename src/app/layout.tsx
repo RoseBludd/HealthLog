@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { headers } from "next/headers";
+import { cookies, headers } from "next/headers";
 import Script from "next/script";
 import "./globals.css";
 import { Providers } from "@/components/providers";
@@ -89,6 +89,9 @@ export default async function RootLayout({
       : undefined;
 
   const initialLocale = await resolveInitialLocale();
+  // Presence only (never the value): lets the shell paint the public Medzs
+  // landing page at `/` on first render for a visitor with no session.
+  const signedOutAtLoad = !(await cookies()).has("healthlog_session");
 
   return (
     <html lang={initialLocale} suppressHydrationWarning>
@@ -138,7 +141,10 @@ export default async function RootLayout({
               block mutations. Resolve it here (server component) and
               thread the boolean into the client shell so the demo
               banner can render without a client-side detection path. */}
-          <AuthShell demoMode={process.env.DEMO_MODE === "true"}>
+          <AuthShell
+            demoMode={process.env.DEMO_MODE === "true"}
+            signedOutAtLoad={signedOutAtLoad}
+          >
             {children}
           </AuthShell>
         </Providers>

@@ -417,10 +417,20 @@ export function proxy(request: NextRequest) {
   const isApiRoute = pathname.startsWith("/api/");
   const isStaticFile = /\.\w+$/.test(pathname);
   const isPublic = isPublicPath(pathname);
+  // `/` is dual-mode: `src/app/page.tsx` renders the public Medzs landing
+  // page for a signed-out visitor and the existing dashboard for a session.
+  // A signed-out visitor must reach it without the login redirect below, but
+  // a session AT `/` still carries one account's dashboard and must keep the
+  // full session-gated treatment (the `no-store` header, the onboarding/MFA
+  // redirects) exactly as before. Exact match on the pathname — never a
+  // prefix — so no other route can inherit the carve-out.
+  const isUngatedSignedOutRoot =
+    pathname === "/" && !request.cookies.has("healthlog_session");
   // Every page behind the session gate. The same predicate drives the
   // auth redirect below and the `no-store` header further down, so a page
   // can never be session-gated without also being uncacheable.
-  const isSessionGatedPage = !isApiRoute && !isStaticFile && !isPublic;
+  const isSessionGatedPage =
+    !isApiRoute && !isStaticFile && !isPublic && !isUngatedSignedOutRoot;
   if (isSessionGatedPage) {
     const hasSession = request.cookies.has("healthlog_session");
     if (!hasSession) {

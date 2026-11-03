@@ -5,6 +5,8 @@ import {
 } from "@tanstack/react-query";
 
 import { getUnswitchedSession } from "@/lib/auth/acting-carrier";
+import { getSession } from "@/lib/auth/session";
+import { MedzsLanding } from "@/components/landing/medzs-landing";
 import { readDashboardSnapshotCached } from "@/lib/dashboard/snapshot-read";
 import { isDashboardSnapshotEnabled } from "@/lib/dashboard/snapshot-flag";
 import {
@@ -80,6 +82,18 @@ function softTimeout<T>(ms: number): Promise<T | undefined> {
  *    others.
  */
 export default async function DashboardPage() {
+  // `/` is dual-mode (proxy.ts admits a signed-out visitor here instead of
+  // redirecting to `/auth/login`): render the public Medzs landing page when
+  // there is no session at all, and fall through to the existing dashboard
+  // otherwise. Plain `getSession()`, not `getUnswitchedSession()` below — a
+  // session mid-account-switch must still reach the dashboard, not the
+  // landing page; the switch itself is handled further down exactly as
+  // before.
+  const session = await getSession();
+  if (!session) {
+    return <MedzsLanding />;
+  }
+
   // Operator/test escape hatch: `DASHBOARD_SSR_PREFETCH=false` renders the
   // pure client-fetch dashboard (pre-prefetch behaviour). The e2e server
   // sets it so Playwright route mocks — which only see CLIENT fetches —

@@ -64,8 +64,17 @@ const PUBLIC_PATHS = [
 export function AuthShell({
   children,
   demoMode = false,
+  signedOutAtLoad = false,
 }: {
   children: React.ReactNode;
+  /**
+   * True when the document request carried no session cookie (resolved by
+   * the server-side root layout). Only consulted at `/` while
+   * `/api/auth/me` is still in flight, so a signed-out visitor's first paint
+   * (SSR included) is the public landing page instead of a spinner. A
+   * request WITH a cookie keeps the hydration gate below, exactly as before.
+   */
+  signedOutAtLoad?: boolean;
   /**
    * True when the instance runs with `DEMO_MODE=true` (resolved by the
    * server-side root layout). Renders the persistent demo banner above
@@ -81,6 +90,13 @@ export function AuthShell({
   const recordSessionTransition = useRecordSessionTransition();
 
   const isPublicPage = PUBLIC_PATHS.some((p) => pathname.startsWith(p));
+  // `/` is dual-mode: `src/app/page.tsx` (RSC) renders the public Medzs
+  // landing page for a signed-out visitor and the existing dashboard for a
+  // session, so the shell must neither auto-redirect a signed-out visitor
+  // away from it (every other protected route does) nor mount the
+  // authenticated chrome around the landing markup. Exact match only — a
+  // `startsWith` here would swallow every route in the app.
+  const isRootPath = pathname === "/";
   // v1.4.26 — `/privacy` is a long-form legal page that brings its own
   // header + footer. Centering it inside the public-page wrapper would
   // squash a 3000-word policy into a "login card" layout, so we let it
@@ -154,7 +170,8 @@ export function AuthShell({
   // the document gutter there too produced a second, never-painted gutter on
   // classic-scrollbar platforms. Flag the body-scrolled branches on `<html>`
   // so the CSS rule scopes to them.
-  const isBodyScrolled = isPublicPage || isOnboardingPage;
+  const isBodyScrolled =
+    isPublicPage || isOnboardingPage || (isRootPath && !isAuthenticated);
   useEffect(() => {
     const root = document.documentElement;
     if (isBodyScrolled) {
@@ -203,7 +220,7 @@ export function AuthShell({
   }, [pathname]);
 
   useEffect(() => {
-    if (!isLoading && !isAuthenticated && !isPublicPage) {
+    if (!isLoading && !isAuthenticated && !isPublicPage && !isRootPath) {
       // Session END (expired / invalidated cookie → `/api/auth/me` 401/403).
       // Wipe the in-memory query cache (the cross-user guard — the
       // QueryClient outlives the navigation on this SPA and the health-data
@@ -230,6 +247,7 @@ export function AuthShell({
     isAuthenticated,
     isAuthUnknown,
     isPublicPage,
+    isRootPath,
     router,
     queryClient,
   ]);
@@ -273,6 +291,24 @@ export function AuthShell({
           {children}
         </main>
       </div>
+    );
+  }
+
+  // `/` for a signed-out visitor: `src/app/page.tsx` rendered the public
+  // Medzs landing page, which brings its own header and footer. Render it
+  // bare. While the auth probe is still in flight we only take this branch
+  // when the document request had no session cookie at all; with a cookie
+  // the hydration gate below still holds the dashboard until `/me` resolves.
+  if (
+    isRootPath &&
+    !isAuthenticated &&
+    (!isLoading ? !isAuthUnknown : signedOutAtLoad)
+  ) {
+    return (
+      <>
+        {demoMode ? <DemoBanner /> : null}
+        {children}
+      </>
     );
   }
 
