@@ -100,7 +100,7 @@ export function TopBar() {
       {/* Mobile logo */}
       <Link href="/" className="flex items-center gap-2 md:hidden">
         <Logo className="text-primary" size={20} />
-        <span className="font-bold tracking-tight">HealthLog</span>
+        <span className="font-bold tracking-tight">Medzs</span>
       </Link>
 
       {/* Desktop: empty spacer (user controls are in sidebar) */}

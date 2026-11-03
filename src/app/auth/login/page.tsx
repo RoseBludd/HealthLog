@@ -341,7 +341,7 @@ export default function LoginPage() {
             <Logo className="text-primary" size={28} />
           </div>
           <div>
-            <h1 className="text-xl font-bold tracking-tight">HealthLog</h1>
+            <h1 className="text-xl font-bold tracking-tight">Medzs</h1>
           </div>
         </div>
 

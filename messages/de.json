@@ -148,7 +148,7 @@
     "anamnesisShiftSchedule": "Arbeitszeitmodell",
     "anamnesisColFact": "Profilangabe",
     "anamnesisColValue": "Erfasster Wert",
-    "subtitle": "HealthLog — Persönlicher Gesundheitsbericht",
+    "subtitle": "Medzs — Persönlicher Gesundheitsbericht",
     "patient": "Patient",
     "dateOfBirth": "Geburtsdatum",
     "gender": "Geschlecht",
@@ -193,7 +193,7 @@
     "colShare": "Anteil",
     "footerDisclaimer1": "Dieser Bericht wurde automatisch aus selbst erfassten Daten generiert und dient ausschließlich zur Unterstützung",
     "footerDisclaimer2": "des Arzt-Patienten-Gesprächs. Er ersetzt keine ärztliche Diagnose. Korrelationen implizieren keine Kausalität.",
-    "footerSource": "Quelle: HealthLog | Zeitzone: {timezone} | Erstellt: {timestamp}",
+    "footerSource": "Quelle: Medzs | Zeitzone: {timezone} | Erstellt: {timestamp}",
     "unitSteps": "Schritte",
     "bmiUnderweight": "Untergewicht",
     "bmiNormal": "Normalgewicht",
@@ -230,7 +230,7 @@
     "summaryTrend": "{label}: zuletzt {latest} {arrow}",
     "summaryAdherence": "Medikamenten-Therapietreue: {rate}% (gewichteter Mittelwert).",
     "chartsTitle": "Trend-Diagramme",
-    "packageReadme": "HealthLog Gesundheitsakte\n\nDieses Paket enthält:\n- report.pdf: den Gesundheitsbericht für die ärztliche Vorlage.\n- bundle.json: dieselben Daten als HL7-FHIR-R4-Dokument (Bundle), ePA-kompatibel.\n\nErstellt mit HealthLog.",
+    "packageReadme": "Medzs Gesundheitsakte\n\nDieses Paket enthält:\n- report.pdf: den Gesundheitsbericht für die ärztliche Vorlage.\n- bundle.json: dieselben Daten als HL7-FHIR-R4-Dokument (Bundle), ePA-kompatibel.\n\nErstellt mit Medzs.",
     "wellnessTitle": "Wellness-Zusammenfassung",
     "wellnessDisclaimer": "Dies sind beschreibende Wellness-Werte, die aus den erfassten Signalen berechnet werden (0–100). Sie sind keine klinischen Beurteilungen oder Diagnosen.",
     "wellnessRecovery": "Erholung",
@@ -394,7 +394,7 @@
     "loadingScreen": "Laden…",
     "more": "Mehr",
     "moreSheetTitle": "Mehr",
-    "moreSheetDescription": "Zum Rest von HealthLog springen.",
+    "moreSheetDescription": "Zum Rest von Medzs springen.",
     "capture": {
       "title": "Erfassen",
       "description": "Was möchtest du erfassen?",
@@ -456,7 +456,7 @@
       "errorLinkRequired": "Hier gibt es bereits ein Konto mit dieser E-Mail-Adresse. Melde dich einmal mit seinem Passwort oder Passkey an, um es mit Single Sign-on zu verbinden."
     },
     "native": {
-      "signingInToApp": "Anmeldung bei der HealthLog-App"
+      "signingInToApp": "Anmeldung bei der Medzs-App"
     },
     "mfa": {
       "title": "Zwei-Faktor-Authentifizierung",
@@ -480,7 +480,7 @@
     },
     "confirmAccess": {
       "title": "Bestätige, dass du es bist",
-      "body": "Ein Assistent möchte sich mit deinen HealthLog-Daten verbinden. Bestätige, dass du es bist; danach entscheidest du, ob du es erlaubst.",
+      "body": "Ein Assistent möchte sich mit deinen Medzs-Daten verbinden. Bestätige, dass du es bist; danach entscheidest du, ob du es erlaubst.",
       "action": "Bestätigen",
       "failed": "Das hat nicht geklappt. Bitte versuche es noch einmal.",
       "nothingToConfirm": "Hier gibt es nichts zu bestätigen. Starte die Verbindung noch einmal in deinem Assistenten."
@@ -796,8 +796,8 @@
     "typeSciScore": "SCI-Wert"
   },
   "metricCatalog": {
-    "title": "Was HealthLog erfassen kann",
-    "description": "Alle Messwert-Bereiche, die HealthLog unterstützt — auch die, für die noch keine Daten vorliegen — und was sie liefert.",
+    "title": "Was Medzs erfassen kann",
+    "description": "Alle Messwert-Bereiche, die Medzs unterstützt — auch die, für die noch keine Daten vorliegen — und was sie liefert.",
     "statusPresent": "Erfasst",
     "statusAbsent": "Noch nicht erfasst",
     "statusModuleOff": "Aus",
@@ -809,7 +809,7 @@
     },
     "watchdog": {
       "title": "Automatische Überwachung",
-      "description": "HealthLog beobachtet außerdem still im Hintergrund — Benachrichtigungen zu unregelmäßigem Rhythmus und Atemstörungen von einer verbundenen Uhr, Warnungen bei Abweichungen von deiner Baseline sowie auffällige Veränderungen zwischen deinen letzten beiden Laborwerten — und zeigt eine Karte nur, wenn etwas auffällt. Ist mindestens eine dieser Quellen verbunden, ist keine Karte ein gutes Zeichen, kein fehlendes Feature; ist noch keine verbunden, wird schlicht noch nichts überwacht."
+      "description": "Medzs beobachtet außerdem still im Hintergrund — Benachrichtigungen zu unregelmäßigem Rhythmus und Atemstörungen von einer verbundenen Uhr, Warnungen bei Abweichungen von deiner Baseline sowie auffällige Veränderungen zwischen deinen letzten beiden Laborwerten — und zeigt eine Karte nur, wenn etwas auffällt. Ist mindestens eine dieser Quellen verbunden, ist keine Karte ein gutes Zeichen, kein fehlendes Feature; ist noch keine verbunden, wird schlicht noch nichts überwacht."
     }
   },
   "mood": {
@@ -1254,7 +1254,7 @@
     "complianceWindow": "Therapietreue ({days} Tage)",
     "complianceUnavailable": "Therapietreue konnte nicht geladen werden",
     "complianceNotApplicable": "Therapietreue nicht anwendbar",
-    "complianceNotApplicableReason": "In HealthLog ist kein lokaler Zeitplan gespeichert.",
+    "complianceNotApplicableReason": "In Medzs ist kein lokaler Zeitplan gespeichert.",
     "complianceInfo": "Anteil der erfassten an den erwarteten Dosen. Wöchentliche Pläne zählen wochenweise.",
     "complianceInfoLabel": "Was bedeutet Therapietreue?",
     "lastIntake": "Letzte Einnahme:",
@@ -1556,7 +1556,7 @@
           "short": "Zeiten"
         },
         "step8": {
-          "title": "Fertig — soll HealthLog dich erinnern?",
+          "title": "Fertig — soll Medzs dich erinnern?",
           "subline": "Du kannst alles unten nochmal prüfen, bevor du speicherst.",
           "remindersLabel": "Erinnerungen aktiv",
           "remindersDescription": "Push, Telegram oder ntfy — je nach deinen Einstellungen.",
@@ -1740,7 +1740,7 @@
         "emptyState": "Noch keine Einnahmen erfasst.",
         "emptyStateCta": "Trage eine Dosis ein, damit die geschätzte Verlaufskurve Gestalt annimmt.",
         "estimateNote": "Edukative Schätzung aus EMA-publizierter Populations-Pharmakokinetik. Keine Messung.",
-        "unknownDrug": "{name} ist nicht im EMA-zugelassenen GLP-1-Katalog enthalten. HealthLog kann dafür keine Populations-Pharmakokinetik-Kurve erzeugen."
+        "unknownDrug": "{name} ist nicht im EMA-zugelassenen GLP-1-Katalog enthalten. Medzs kann dafür keine Populations-Pharmakokinetik-Kurve erzeugen."
       }
     },
     "detail": {
@@ -2693,10 +2693,10 @@
     },
     "coach": {
       "refusalOutOfScope": "Ich kann nur bei den Gesundheitsdaten in deinem Log helfen — Messwerte, Medikamente, Stimmung, Trends. Fragen außerhalb dieses Themas beantworte ich nicht.",
-      "refusalInjection": "In deiner Nachricht stehen Anweisungen, die meine Vorgaben überschreiben sollen. Ich bin der HealthLog-Coach und fasse ausschließlich deine eigenen Gesundheitsdaten zusammen — formuliere deine Frage bitte in diesem Rahmen neu.",
+      "refusalInjection": "In deiner Nachricht stehen Anweisungen, die meine Vorgaben überschreiben sollen. Ich bin der Medzs-Coach und fasse ausschließlich deine eigenen Gesundheitsdaten zusammen — formuliere deine Frage bitte in diesem Rahmen neu.",
       "errorBudget": "Du hast das heutige Coach-Limit erreicht. Das Budget setzt sich um Mitternacht (UTC) zurück.",
       "errorProvider": "Der Coach konnte gerade keinen Auswertungs-Anbieter erreichen. Bitte versuche es in einem Moment erneut.",
-      "errorNoProvider": "Der Coach liest deine erfassten Gesundheitsdaten und beantwortet Fragen dazu (keine medizinische Beratung). Dafür braucht HealthLog einen KI-Anbieter — verbinde deinen eigenen Schlüssel oder ein lokales Modell.",
+      "errorNoProvider": "Der Coach liest deine erfassten Gesundheitsdaten und beantwortet Fragen dazu (keine medizinische Beratung). Dafür braucht Medzs einen KI-Anbieter — verbinde deinen eigenen Schlüssel oder ein lokales Modell.",
       "errorNoProviderAction": "KI-Anbieter verbinden",
       "errorNetwork": "Keine Internetverbindung — versuche es erneut, sobald du online bist.",
       "prefsSaveError": "Coach-Einstellungen konnten nicht gespeichert werden. Bitte versuche es erneut.",
@@ -3267,7 +3267,7 @@
         "clearValue": "Ausgeglichen",
         "clearCaption": "Nichts offen über die letzten {nights} Nächte",
         "learning": "Dein Schlaf wird noch erfasst — {counted} Nächte bisher, noch {remaining} für eine verlässliche Bilanz.",
-        "computedInfo": "Das ist HealthLogs eigene Schätzung: eine gleitende Bilanz aus Bedarf minus Schlaf über die letzten Nächte, die Aufholschlaf wieder abbaut. Sie kann vom nativen Schlafdefizit eines Wearables abweichen, das ein eigenes Bedarfsmodell nutzt."
+        "computedInfo": "Das ist Medzss eigene Schätzung: eine gleitende Bilanz aus Bedarf minus Schlaf über die letzten Nächte, die Aufholschlaf wieder abbaut. Sie kann vom nativen Schlafdefizit eines Wearables abweichen, das ein eigenes Bedarfsmodell nutzt."
       },
       "average": {
         "title": "Durchschnitt pro Nacht",
@@ -4072,7 +4072,7 @@
           "method": "Dein VO₂max im Vergleich zu alters- und geschlechtsbezogenen Perzentilen der kardiorespiratorischen Fitness, als Fitnessalter-Differenz. Das VO₂max ist die Schätzung deines Geräts — hier nie neu berechnet."
         },
         "VASCULAR_AGE_DELTA": {
-          "method": "Die Gefäßalter- bzw. Pulswellengeschwindigkeits-Schätzung deines Geräts im Vergleich zu deinem chronologischen Alter, als Differenz in Jahren. Die Schätzung stammt vom Gerät; HealthLog ordnet sie nur ein.",
+          "method": "Die Gefäßalter- bzw. Pulswellengeschwindigkeits-Schätzung deines Geräts im Vergleich zu deinem chronologischen Alter, als Differenz in Jahren. Die Schätzung stammt vom Gerät; Medzs ordnet sie nur ein.",
           "caveat": "Die eigene Schätzung deines Geräts, nur eingeordnet — beschreibend, keine klinische Gefäßbewertung.",
           "description": "Wie die Gefäßalter-Schätzung deines Geräts zu deinem chronologischen Alter steht."
         },
@@ -4244,9 +4244,9 @@
     "navBreathingDisturbances": "Atmung",
     "rhythmEvents": {
       "sectionTitle": "Gesundheitshinweise des Geräts",
-      "sectionIntro": "Hinweise, die deine Uhr eigenständig gesendet hat. HealthLog zeigt diese nur an — es erkennt, bestätigt oder interpretiert sie nicht.",
+      "sectionIntro": "Hinweise, die deine Uhr eigenständig gesendet hat. Medzs zeigt diese nur an — es erkennt, bestätigt oder interpretiert sie nicht.",
       "loadError": "Die Gerätehinweise konnten nicht geladen werden.",
-      "disclaimer": "Dies sind Hinweise, die dein Gerät mit seiner eigenen integrierten Erkennung erzeugt hat. Sie werden hier nur zu deiner Information angezeigt. Dies ist keine medizinische Bewertung durch HealthLog, und HealthLog stellt keine Diagnose. Wenn dich ein Hinweis beunruhigt, sprich mit deiner Ärztin oder deinem Arzt.",
+      "disclaimer": "Dies sind Hinweise, die dein Gerät mit seiner eigenen integrierten Erkennung erzeugt hat. Sie werden hier nur zu deiner Information angezeigt. Dies ist keine medizinische Bewertung durch Medzs, und Medzs stellt keine Diagnose. Wenn dich ein Hinweis beunruhigt, sprich mit deiner Ärztin oder deinem Arzt.",
       "event": {
         "irregularRhythm": "Hinweis auf unregelmäßigen Rhythmus",
         "highHeartRate": "Hinweis auf hohe Herzfrequenz",
@@ -4491,7 +4491,7 @@
     "aiSetupHint": {
       "title": "KI ist optional",
       "body": "Hier funktioniert alles auch ohne KI. Wenn du ein tägliches Briefing, kurze Notizen zu deinen Werten und den Coach möchtest, kannst du einen KI-Anbieter verbinden.",
-      "settingsBody": "HealthLog funktioniert vollständig ohne KI. Verbinde unten einen Anbieter, wenn du ein tägliches Briefing, kurze Notizen zu deinen Werten und den Coach möchtest.",
+      "settingsBody": "Medzs funktioniert vollständig ohne KI. Verbinde unten einen Anbieter, wenn du ein tägliches Briefing, kurze Notizen zu deinen Werten und den Coach möchtest.",
       "action": "KI einrichten",
       "dismiss": "Nicht jetzt"
     }
@@ -4614,7 +4614,7 @@
       "title": "Kurz zu dir",
       "body": "Vier optionale Angaben verbessern Zielwerte, BMI und Erinnerungen. Du kannst alles später in den Einstellungen anpassen.",
       "displayNameLabel": "Anzeigename",
-      "displayNamePlaceholder": "Wie soll dich HealthLog ansprechen?",
+      "displayNamePlaceholder": "Wie soll dich Medzs ansprechen?",
       "displayNameHint": "Erscheint im Dashboard-Gruß und in Berichten.",
       "heightLabel": "Größe (cm)",
       "heightLabelFtIn": "Größe (ft, in)",
@@ -4641,16 +4641,16 @@
       "cta": "Zum Dashboard"
     },
     "disclaimer": {
-      "acknowledge": "Mir ist klar: HealthLog ist ein privates Tracking-Tool, keine klinische Bewertung und keine Diagnose. Bei Sorgen wende ich mich an meine Ärztin oder meinen Arzt, nicht an diese App.",
+      "acknowledge": "Mir ist klar: Medzs ist ein privates Tracking-Tool, keine klinische Bewertung und keine Diagnose. Bei Sorgen wende ich mich an meine Ärztin oder meinen Arzt, nicht an diese App.",
       "learnMore": "Mehr erfahren"
     },
     "anamnesis": {
       "title": "Zu deiner Gesundheit (optional)",
-      "subtitle": "Etwas Kontext, damit HealthLog deine Werte fairer einordnet.",
+      "subtitle": "Etwas Kontext, damit Medzs deine Werte fairer einordnet.",
       "intro": "Teile so viel oder so wenig, wie du möchtest — jedes Feld ist optional und jederzeit in den Einstellungen änderbar.",
       "conditionsLabel": "Bestehende Erkrankungen",
       "conditionsPlaceholder": "z. B. Bluthochdruck, Typ-2-Diabetes",
-      "conditionsHint": "Hilft HealthLog, deine Werte im Kontext einzuordnen, statt Erwartbares zu melden.",
+      "conditionsHint": "Hilft Medzs, deine Werte im Kontext einzuordnen, statt Erwartbares zu melden.",
       "allergiesLabel": "Allergien oder Unverträglichkeiten",
       "allergiesPlaceholder": "z. B. Penicillin, Laktose",
       "privacyNote": "Verschlüsselt gespeichert und nur für besseren Kontext genutzt. Medikamente fragen wir hier nicht ab — die kannst du jederzeit auf der Medikamenten-Seite ergänzen."
@@ -4666,12 +4666,12 @@
       "sampleCaption": "Nur ein Beispiel — nicht deine eigenen Daten. So liest sich ein Briefing, sobald Insights aktiv sind.",
       "ladderTitle": "Drei Wege, es zu aktivieren",
       "ladderLocalTitle": "Lokales Modell — KI-Anfragen bleiben in deinem Netzwerk",
-      "ladderLocalBody": "Richte HealthLog auf Ollama oder LM Studio auf deinem eigenen Rechner aus. Kostenlos und vollständig privat — der ruhige Standard.",
+      "ladderLocalBody": "Richte Medzs auf Ollama oder LM Studio auf deinem eigenen Rechner aus. Kostenlos und vollständig privat — der ruhige Standard.",
       "ladderByokTitle": "Eigenen Schlüssel verwenden",
       "ladderByokBody": "Nutze deinen eigenen OpenAI- oder Anthropic-Schlüssel. Er läuft über dein Konto und deine Abrechnung, und die API-Stufe hält deine Daten standardmäßig aus dem Training heraus.",
       "ladderOauthTitle": "Mit einem Abo anmelden",
       "ladderOauthBody": "Verbinde ein ChatGPT-Konto — keine Kosten pro Token, aber die Bedingungen der Verbraucherstufe können Inhalte fürs Training nutzen. Deshalb eine bewusste Wahl, nie der Standard für deine Gesundheitsdaten.",
-      "keylessLine": "HealthLog ist auch ohne KI vollständig nutzbar. Deine Kacheln, Diagramme, Trends und Exporte funktionieren alle — KI ergänzt nur den Klartext obendrauf.",
+      "keylessLine": "Medzs ist auch ohne KI vollständig nutzbar. Deine Kacheln, Diagramme, Trends und Exporte funktionieren alle — KI ergänzt nur den Klartext obendrauf.",
       "setupCta": "Einrichten (etwa eine Minute)",
       "sharedKeyNote": "Diese Instanz stellt bereits einen gemeinsamen KI-Anbieter bereit, deshalb funktionieren Insights für dich sofort — keine Einrichtung nötig.",
       "offer": {
@@ -4683,7 +4683,7 @@
       },
       "unavailable": {
         "title": "Der Anbieter dieser Instanz antwortet gerade nicht.",
-        "body": "HealthLog funktioniert ohne Klartext vollständig. Du kannst später in den Einstellungen einen eigenen Anbieter hinterlegen."
+        "body": "Medzs funktioniert ohne Klartext vollständig. Du kannst später in den Einstellungen einen eigenen Anbieter hinterlegen."
       }
     },
     "steps": {
@@ -4699,12 +4699,12 @@
     },
     "flow": {
       "welcome": {
-        "title": "Willkommen bei HealthLog",
-        "body": "Fünf kurze Fragen entscheiden, was HealthLog dir zuerst zeigt. Das dauert etwa zwei Minuten.",
+        "title": "Willkommen bei Medzs",
+        "body": "Fünf kurze Fragen entscheiden, was Medzs dir zuerst zeigt. Das dauert etwa zwei Minuten.",
         "changeLater": "Nichts ist endgültig: Jede Wahl lässt sich später unter Einstellungen ändern.",
         "setUp": "Einrichten",
         "skip": "Vorerst überspringen",
-        "againBody": "Deine Einrichtung ist abgeschlossen. Beantworte die Fragen erneut, um zu ändern, was HealthLog zuerst zeigt, oder geh zum Dashboard.",
+        "againBody": "Deine Einrichtung ist abgeschlossen. Beantworte die Fragen erneut, um zu ändern, was Medzs zuerst zeigt, oder geh zum Dashboard.",
         "setUpAgain": "Erneut einrichten"
       },
       "who": {
@@ -4785,7 +4785,7 @@
       },
       "confirm": {
         "title": "Das schalten deine Antworten ein",
-        "body": "Ein Blick, dann ist HealthLog eingerichtet. Nichts davon ist endgültig.",
+        "body": "Ein Blick, dann ist Medzs eingerichtet. Nichts davon ist endgültig.",
         "modulesTitle": "Module",
         "switchedOn": "Eingeschaltet: {modules}.",
         "nothingExtra": "Deine Antworten schalten kein zusätzliches Modul ein; die Kernwerte sind immer da.",
@@ -4881,7 +4881,7 @@
   },
   "gettingStarted": {
     "title": "Erste Schritte",
-    "subtitle": "Quick Wins, damit du das Beste aus HealthLog herausholst.",
+    "subtitle": "Quick Wins, damit du das Beste aus Medzs herausholst.",
     "progress": "{done} von {total} erledigt",
     "dismissAll": "Checkliste ausblenden",
     "dismissTooltip": "Diesen Punkt ausblenden",
@@ -4899,7 +4899,7 @@
       "dataSourceDescription": "Gewicht, Blutdruck, Schlaf und mehr automatisch aus Withings, WHOOP, Oura, Polar, Nightscout, Fitbit oder Apple Health.",
       "dataSourceCta": "Verbinden",
       "notificationsTitle": "Benachrichtigungen einrichten",
-      "notificationsDescription": "Wähle, wie HealthLog dich erinnert — Telegram, ntfy oder Web Push.",
+      "notificationsDescription": "Wähle, wie Medzs dich erinnert — Telegram, ntfy oder Web Push.",
       "notificationsCta": "Benachrichtigungen öffnen",
       "insightsTitle": "Insights aktivieren (optional)",
       "insightsDescription": "Füge ein lokales Modell oder deinen eigenen KI-Schlüssel hinzu, um das tägliche Briefing und Coach freizuschalten.",
@@ -5281,7 +5281,7 @@
               "parsing": "Export wird gelesen…",
               "upserting": "Datensätze werden importiert…"
             },
-            "skipUnsupported": "{count} Samples übersprungen — Datentypen, die HealthLog nicht importiert.",
+            "skipUnsupported": "{count} Samples übersprungen — Datentypen, die Medzs nicht importiert.",
             "skipRefused": "{count} Samples konnten nicht geschrieben werden (unlesbar, außerhalb des Wertebereichs oder Speichern fehlgeschlagen).",
             "skipBreakdown": "Aufschlüsselung anzeigen ({count} Typen)",
             "skipBreakdownMore": "+ {count} weitere Typen",
@@ -5450,7 +5450,7 @@
         },
         "manageIn": "In {section} verwalten",
         "operatorDisabled": "Serverweit deaktiviert",
-        "subtitle": "Lege fest, welche Tracking-Bereiche HealthLog überall anzeigt."
+        "subtitle": "Lege fest, welche Tracking-Bereiche Medzs überall anzeigt."
       },
       "gesundheitsakte": {
         "title": "Gesundheitsakte",
@@ -5531,7 +5531,7 @@
           "title": "Was in deinen Score einfließt",
           "description": "Jeder Bereich, den du aufzeichnest, zählt mit, solange du hier nichts anderes sagst."
         },
-        "threeAxes": "Aufzeichnen, Anzeigen und Mitzählen sind drei verschiedene Dinge. Diese Seite ändert nur das Letzte. Ein Bereich, den du hier abschaltest, wird weiter aufgezeichnet und weiter überall in HealthLog angezeigt, er bewegt nur die Zahl nicht mehr.",
+        "threeAxes": "Aufzeichnen, Anzeigen und Mitzählen sind drei verschiedene Dinge. Diese Seite ändert nur das Letzte. Ein Bereich, den du hier abschaltest, wird weiter aufgezeichnet und weiter überall in Medzs angezeigt, er bewegt nur die Zahl nicht mehr.",
         "recommendation": "Drei Felder der Gesundheit sind die Empfehlung, keine Bedingung: Jede Auswahl mit mindestens einem Bereich lässt sich speichern. Ein schmalerer Score wird genauso berechnet und nennt auf der Karte, auf wie vielen Feldern er beruht.",
         "axis": {
           "countsFor": "{pillar} in den Score einrechnen"
@@ -5720,7 +5720,7 @@
     "emailEnable": "E-Mail aktivieren",
     "emailRecipient": "Empfängeradresse",
     "webPush": "Browser-Push",
-    "webPushDescription": "Erhalte Benachrichtigungen direkt im Browser, auch wenn HealthLog nicht geöffnet ist.",
+    "webPushDescription": "Erhalte Benachrichtigungen direkt im Browser, auch wenn Medzs nicht geöffnet ist.",
     "webPushNotSupported": "Dein Browser unterstützt keine Push-Benachrichtigungen.",
     "webPushDenied": "Push-Benachrichtigungen wurden blockiert. Erlaube sie in den Browser-Einstellungen.",
     "webPushNotConfigured": "Web Push ist serverseitig nicht konfiguriert.",
@@ -5777,7 +5777,7 @@
           "admin-openai": "Admin-OpenAI"
         },
         "title": "Fallback-Kette",
-        "description": "Wenn der primäre Provider ausfällt, läuft HealthLog die Kette der Reihe nach durch. Reihenfolge per Pfeile ändern, Schalter deaktiviert einen Eintrag ohne ihn zu entfernen.",
+        "description": "Wenn der primäre Provider ausfällt, läuft Medzs die Kette der Reihe nach durch. Reihenfolge per Pfeile ändern, Schalter deaktiviert einen Eintrag ohne ihn zu entfernen.",
         "moveUp": "Nach oben",
         "moveDown": "Nach unten",
         "removeFromChain": "Aus Kette entfernen",
@@ -5964,7 +5964,7 @@
       },
       "operatorOff": {
         "allTitle": "KI ist auf diesem Server abgeschaltet",
-        "allBody": "Wer diesen Server betreibt, hat KI abgeschaltet. HealthLog funktioniert weiter mit all deinen Daten; die Funktionen, die KI brauchen, werden einfach nicht angezeigt.",
+        "allBody": "Wer diesen Server betreibt, hat KI abgeschaltet. Medzs funktioniert weiter mit all deinen Daten; die Funktionen, die KI brauchen, werden einfach nicht angezeigt.",
         "someTitle": "Einige KI-Funktionen sind auf diesem Server abgeschaltet",
         "someBody": "Wer diesen Server betreibt, hat abgeschaltet: {switches}. Alles andere, auch all deine Daten, funktioniert wie gewohnt.",
         "testRefused": "KI ist auf diesem Server abgeschaltet, daher gibt es nichts zu testen.",
@@ -6040,7 +6040,7 @@
     "withingsConnect": "Mit Withings verbinden",
     "withingsNoCredentials": "Bitte zuerst die API-Zugangsdaten oben eingeben, um Withings zu verbinden.",
     "whoop": "WHOOP",
-    "whoopDescription": "Verbinde dein WHOOP-Band, um Erholung, Schlaf, Belastung und Workouts direkt in HealthLog zu synchronisieren.",
+    "whoopDescription": "Verbinde dein WHOOP-Band, um Erholung, Schlaf, Belastung und Workouts direkt in Medzs zu synchronisieren.",
     "whoopCredentials": "API-Zugangsdaten",
     "whoopClientId": "Client ID",
     "whoopClientSecret": "Client Secret",
@@ -6734,16 +6734,16 @@
     },
     "appleHealth": {
       "title": "Apple Health",
-      "description": "Die Live-Synchronisierung erfolgt über die HealthLog-iOS-App — nicht über eine Web- oder OAuth-Verbindung.",
+      "description": "Die Live-Synchronisierung erfolgt über die Medzs-iOS-App — nicht über eine Web- oder OAuth-Verbindung.",
       "status": {
         "unavailable": "Apple-Health-Status nicht verfügbar"
       },
       "setupTitle": "Live-Synchronisierung aktivieren",
-      "permissionStep": "Öffne in der HealthLog-iOS-App Einstellungen → Apple Health und erlaube die Gesundheitskategorien, die du teilen möchtest.",
+      "permissionStep": "Öffne in der Medzs-iOS-App Einstellungen → Apple Health und erlaube die Gesundheitskategorien, die du teilen möchtest.",
       "backgroundStep": "Lass die Hintergrundaktualisierung aktiviert. Die App synchronisiert neue Daten automatisch im Vordergrund und wenn iOS Hintergrundzeit gewährt.",
       "importNote": "Du brauchst ältere Daten oder kannst die iOS-App nicht nutzen? Der Apple-Health-XML/ZIP-Upload ist ein einmaliger Ersatzweg und aktiviert keine Live-Synchronisierung.",
       "importAction": "Einmaligen Import öffnen",
-      "staleNote": "Seit über einer Woche sind keine Apple-Health-Daten angekommen. Öffne die HealthLog-App auf deinem iPhone und prüfe die Apple-Health-Berechtigungen.",
+      "staleNote": "Seit über einer Woche sind keine Apple-Health-Daten angekommen. Öffne die Medzs-App auf deinem iPhone und prüfe die Apple-Health-Berechtigungen.",
       "progress": {
         "title": "Sync-Fortschritt",
         "receivedLabel": "Empfangene Datensätze",
@@ -6783,7 +6783,7 @@
     "passkeyStepUpRequired": "Aus Sicherheitsgründen bitte erneut anmelden, bevor du einen Passkey entfernst.",
     "setup": {
       "title": "Einrichtung",
-      "description": "Die Fragen, die entscheiden, was HealthLog zuerst zeigt, und die Erste-Schritte-Checkliste auf dem Dashboard.",
+      "description": "Die Fragen, die entscheiden, was Medzs zuerst zeigt, und die Erste-Schritte-Checkliste auf dem Dashboard.",
       "setUpAgain": "Erneut einrichten",
       "showChecklist": "Checkliste wieder anzeigen",
       "checklistShown": "Die Checkliste ist wieder auf dem Dashboard.",
@@ -6791,8 +6791,8 @@
     },
     "documentSources": {
       "title": "Dokumentarchive",
-      "description": "Paperless-ngx oder Papra aus HealthLog durchsuchen und ausgewählte Dokumente importieren.",
-      "explainer": "Ein Import-Knopf erscheint überall, wo du Dokumente verknüpfst: bei Arztbesuchen, Impfungen und Erkrankungen sowie unter Dokumente. HealthLog speichert von jedem importierten Dokument eine eigene verschlüsselte Kopie und fragt dein Archiv nur, wenn du suchst oder importierst.",
+      "description": "Paperless-ngx oder Papra aus Medzs durchsuchen und ausgewählte Dokumente importieren.",
+      "explainer": "Ein Import-Knopf erscheint überall, wo du Dokumente verknüpfst: bei Arztbesuchen, Impfungen und Erkrankungen sowie unter Dokumente. Medzs speichert von jedem importierten Dokument eine eigene verschlüsselte Kopie und fragt dein Archiv nur, wenn du suchst oder importierst.",
       "systemLabel": "Archiv",
       "statusConnected": "Verbunden",
       "statusNotConnected": "Nicht verbunden",
@@ -6813,7 +6813,7 @@
       "testOk": "Das Archiv hat in {latency} ms geantwortet.",
       "disconnect": "Trennen",
       "disconnectTitle": "{name} trennen?",
-      "disconnectDescription": "HealthLog vergisst Adresse und Token. Bereits importierte Dokumente bleiben in HealthLog.",
+      "disconnectDescription": "Medzs vergisst Adresse und Token. Bereits importierte Dokumente bleiben in Medzs.",
       "unavailableExplainer": "Dieser Server erlaubt keine Dokumentarchive mehr, die Verbindung unten ist daher nicht nutzbar. Du kannst sie weiterhin entfernen.",
       "moduleOffExplainer": "Dokumente sind ausgeschaltet, die Verbindung unten wird daher nicht genutzt. Du kannst sie weiterhin entfernen.",
       "tokenNewAddress": "Für eine neue Adresse wird das API-Token erneut gebraucht."
@@ -7332,7 +7332,7 @@
         "uploadTitle": "Backup hochladen",
         "uploadDescription": "Eine Backup-Datei validieren und als manuellen Snapshot speichern. Das Wiederherstellen ist ein separater Schritt.",
         "uploadButton": "Datei hochladen",
-        "uploadHelp": "HealthLog-Backup als .json oder .json.gz. Die Datei wird vor dem Hochladen komprimiert; komprimiert darf sie bis zu 512 MB groß sein.",
+        "uploadHelp": "Medzs-Backup als .json oder .json.gz. Die Datei wird vor dem Hochladen komprimiert; komprimiert darf sie bis zu 512 MB groß sein.",
         "uploadSuccess": "Backup hochgeladen ({count} Datensätze)",
         "uploadFailed": "Upload fehlgeschlagen",
         "restore": "Wiederherstellen",
@@ -7434,8 +7434,8 @@
         "restoreFailureNotFound": "Das Backup wurde gelöscht, bevor die Wiederherstellung es lesen konnte.",
         "restoreFailureChanged": "Das Backup wurde durch eine neuere Kopie ersetzt, während die Wiederherstellung wartete. Prüfe die neue Kopie und starte die Wiederherstellung dann erneut.",
         "restoreFailureUndecryptable": "Das Backup ließ sich nicht entschlüsseln. Der Schlüssel, mit dem es geschrieben wurde, ist nicht mehr eingerichtet, oder die gespeicherte Kopie wurde verändert.",
-        "restoreFailureSchema": "Die Backup-Datei ist kein gültiges HealthLog-Backup.",
-        "restoreFailureVersion": "Das Backup stammt von einer neueren HealthLog-Version. Aktualisiere zuerst diesen Server.",
+        "restoreFailureSchema": "Die Backup-Datei ist kein gültiges Medzs-Backup.",
+        "restoreFailureVersion": "Das Backup stammt von einer neueren Medzs-Version. Aktualisiere zuerst diesen Server.",
         "restoreFailureOwnerMismatch": "Die Datei im Backup gehört zu einem anderen Konto als die Backup-Zeile.",
         "restoreFailureOwnerMissing": "Das Konto, zu dem dieses Backup gehört, gibt es nicht mehr.",
         "restoreFailureSectionMissing": "Die Datei ist unvollständig: Ihr Manifest nennt einen Bereich, den sie nicht enthält.",
@@ -7877,19 +7877,19 @@
     "admin": {
       "deployFailedTitle": "Bereitstellung fehlgeschlagen: {application}",
       "deployFailedBody": "Bei der Bereitstellung von {application} (#{deployment}) ist ein Fehler aufgetreten: {error}. Logs ansehen: {logsUrl}",
-      "testNotificationTitle": "HealthLog Test-Benachrichtigung",
+      "testNotificationTitle": "Medzs Test-Benachrichtigung",
       "testNotificationBody": "Diese Test-Benachrichtigung wurde vom Admin-Panel ausgelöst. Wenn du sie siehst, funktioniert der Kanal.",
       "reminderCheckMissedTitle": "Erinnerung verpasst: {medication}",
       "reminderCheckMissedBody": "{medication} ({dose}) im Zeitfenster {window} wurde nicht geloggt.",
       "reminderCheckOverdueTitle": "Einnahme überfällig: {medication}",
       "reminderCheckOverdueBody": "{medication} ({dose}) im Zeitfenster {window} ist seit {minutes} Minuten überfällig.",
       "offlineGeoUnavailableTitle": "Offline-Geodatenbanken nicht geladen",
-      "offlineGeoUnavailableBody": "HealthLog löst Login-Standorte über die Online-Abfrage bei {host} auf, damit verlässt jede Login-IP diesen Server. Um sie stattdessen lokal aufzulösen, lade die Datenbanken GeoLite2-City und GeoLite2-ASN mit einem kostenlosen MaxMind-Konto herunter, binde das Verzeichnis in den Container ein und setze GEOLITE2_DIR darauf. Anleitung: {docsUrl}",
+      "offlineGeoUnavailableBody": "Medzs löst Login-Standorte über die Online-Abfrage bei {host} auf, damit verlässt jede Login-IP diesen Server. Um sie stattdessen lokal aufzulösen, lade die Datenbanken GeoLite2-City und GeoLite2-ASN mit einem kostenlosen MaxMind-Konto herunter, binde das Verzeichnis in den Container ein und setze GEOLITE2_DIR darauf. Anleitung: {docsUrl}",
       "tlsPinChangedTitle": "TLS-Leaf-Zertifikat geändert: {host}",
       "tlsPinChangedBody": "Das von {host} ausgelieferte TLS-Leaf hat jetzt den SPKI-Pin {servedPin}, der nicht im bekannten Pin-Satz enthalten ist. Gepinnte Clients (die native App) können sich nicht mehr verbinden, sobald der alte Pin weg ist. Extrahiere den neuen Leaf-Pin erneut, ergänze ihn in TLS_LEAF_SPKI_PINS sowie im Pin-Satz des nativen Clients und veröffentliche einen Build, bevor dieses Zertifikat am {validTo} abläuft. Siehe docs/ops/tls-cert-pin.md."
     },
     "user": {
-      "telegramTestBody": "HealthLog: Verbindung hergestellt. Telegram-Benachrichtigungen sind aktiv."
+      "telegramTestBody": "Medzs: Verbindung hergestellt. Telegram-Benachrichtigungen sind aktiv."
     },
     "moodReminder": {
       "title": "Tägliche Stimmungs-Erinnerung",
@@ -7960,7 +7960,7 @@
     "eventWithingsSyncFailed": "Withings-Sync fehlgeschlagen",
     "eventWithingsSyncFailedDesc": "Wird gesendet, wenn die Withings-Synchronisierung mehrere Versuche in Folge scheitert.",
     "eventSystemAlert": "Systemmeldung",
-    "eventSystemAlertDesc": "Allgemeine Mitteilungen vom HealthLog-Server, etwa Wartungsfenster oder Konto-Hinweise.",
+    "eventSystemAlertDesc": "Allgemeine Mitteilungen vom Medzs-Server, etwa Wartungsfenster oder Konto-Hinweise.",
     "eventPersonalRecord": "Persönlicher Rekord",
     "eventPersonalRecordDesc": "Wird gesendet, wenn ein Messwert deine bisherige Bestmarke übertrifft.",
     "eventMoodReminder": "Stimmungs-Erinnerung",
@@ -8145,7 +8145,7 @@
     "whichMedication": "<b>Welches Medikament eingenommen?</b>",
     "cancelButton": "Abbrechen",
     "askMedicationName": "Bitte Medikament angeben, z.B. <b>genommen Ramipril</b>.",
-    "medicationNotFoundExact": "Medikament nicht gefunden. Bitte Namen exakt wie in HealthLog senden.",
+    "medicationNotFoundExact": "Medikament nicht gefunden. Bitte Namen exakt wie in Medzs senden.",
     "helpHeader": "<b>Verfügbare Befehle:</b>",
     "helpBody": "/help — Diese Hilfe anzeigen\n/add — Einnahme erfassen\n/start — Bot starten\n\n<b>Textbefehle:</b>\ngenommen &lt;Name&gt; — Einnahme bestätigen\n\n<b>Über die Buttons in Erinnerungen:</b>\n• Genommen — Einnahme bestätigen\n• 🕐 1h / 🕐 3h — Erinnerung verschieben\n• ⏭ Überspringen — Einnahme überspringen\n• ✓ Bestätigen — Verpasste Einnahme bestätigen",
     "measureValuePrompt": "Antworte mit dem Wert, um ihn zu speichern (optional).",
@@ -8207,7 +8207,7 @@
     "title": "Geteilte Gesundheitsakte",
     "period": "Berichtszeitraum: {start} – {end}",
     "expires": "Dieser Link läuft am {date} ab.",
-    "provenance": "Dies ist eine schreibgeschützte Zusammenfassung, die von der betreffenden Person geteilt wurde, exportiert aus ihren selbst erfassten HealthLog-Daten. Die Werte sind selbst erhoben und können geräteübertragene Messwerte enthalten; behandeln Sie sie als von der Patientin/dem Patienten berichtet, nicht als klinische Untersuchung.",
+    "provenance": "Dies ist eine schreibgeschützte Zusammenfassung, die von der betreffenden Person geteilt wurde, exportiert aus ihren selbst erfassten Medzs-Daten. Die Werte sind selbst erhoben und können geräteübertragene Messwerte enthalten; behandeln Sie sie als von der Patientin/dem Patienten berichtet, nicht als klinische Untersuchung.",
     "labs": "Laborwerte",
     "medications": "Medikamente & Therapietreue",
     "bmi": "Body-Mass-Index (BMI)",
@@ -8229,7 +8229,7 @@
       "strain": "Belastungswert",
       "score": "Wellness-Wert"
     },
-    "footer": "Geteilt aus HealthLog — einem selbst gehosteten Gesundheits-Tracker.",
+    "footer": "Geteilt aus Medzs — einem selbst gehosteten Gesundheits-Tracker.",
     "unlock": {
       "title": "Passphrase eingeben",
       "description": "Diese geteilte Gesundheitsakte ist geschützt. Geben Sie die erhaltene Passphrase ein, um sie anzuzeigen.",
@@ -8630,8 +8630,8 @@
     "periodConfirmBody": "Deine Periode wurde für etwa jetzt vorhergesagt. Trage sie ein, damit die Vorhersagen genau bleiben.",
     "fertileSoonTitle": "Fruchtbares Fenster steht bevor",
     "fertileSoonBody": "Dein geschätztes fruchtbares Fenster beginnt voraussichtlich in etwa zwei Tagen. Dies ist eine Schätzung und keine medizinische oder verhütende Garantie.",
-    "discreetTitle": "HealthLog-Erinnerung",
-    "discreetBody": "Du hast eine Erinnerung in HealthLog."
+    "discreetTitle": "Medzs-Erinnerung",
+    "discreetBody": "Du hast eine Erinnerung in Medzs."
   },
   "dataList": {
     "allSources": "Alle Quellen",
@@ -9554,7 +9554,7 @@
     },
     "refusal": {
       "outOfScope": "Ich kann nur bei den Gesundheitsdaten in deinem Log helfen — Messwerte, Medikamente, Stimmung, Trends. Fragen außerhalb dieses Themas beantworte ich nicht.",
-      "promptInjection": "In deiner Nachricht stehen Anweisungen, die meine Vorgaben überschreiben sollen. Ich bin der HealthLog-Coach und fasse ausschließlich deine eigenen Gesundheitsdaten zusammen — formuliere deine Frage bitte in diesem Rahmen neu.",
+      "promptInjection": "In deiner Nachricht stehen Anweisungen, die meine Vorgaben überschreiben sollen. Ich bin der Medzs-Coach und fasse ausschließlich deine eigenen Gesundheitsdaten zusammen — formuliere deine Frage bitte in diesem Rahmen neu.",
       "conversationPoisoned": "Eine frühere Nachricht in dieser Unterhaltung enthält Anweisungen, die meine Vorgaben überschreiben sollen. Beginne bitte eine neue Unterhaltung."
     },
     "noRecordedData": "Zu deiner Frage sind bei dir keine Messwerte erfasst, also kann ich dir dazu keine Zahl nennen. Sobald du etwas eingetragen hast, frag mich noch einmal — dann rechne ich mit deinen eigenen Werten.",
@@ -10049,7 +10049,7 @@
         }
       }
     },
-    "disclaimer": "Das sind deine eigenen Angaben, keine ärztliche Diagnose. HealthLog stellt keine Diagnose, behandelt nicht und deutet nichts.",
+    "disclaimer": "Das sind deine eigenen Angaben, keine ärztliche Diagnose. Medzs stellt keine Diagnose, behandelt nicht und deutet nichts.",
     "allergies": {
       "cardTitle": "Allergien & Unverträglichkeiten",
       "cardDescription": "Stoffe, auf die du reagierst, mit Reaktion und Schweregrad.",
@@ -10485,7 +10485,7 @@
       "openButton": "Coach fragen"
     },
     "readingConsent": {
-      "body": "Beim Lesen mit KI geht dies an deinen KI-Dienst außerhalb dieses Servers. Darf HealthLog Dokumente, Laborbefunde und Medikamentenbeschreibungen zum Lesen senden?",
+      "body": "Beim Lesen mit KI geht dies an deinen KI-Dienst außerhalb dieses Servers. Darf Medzs Dokumente, Laborbefunde und Medikamentenbeschreibungen zum Lesen senden?",
       "grant": "Lesen erlauben",
       "error": "Die Einwilligung konnte nicht gespeichert werden. Bitte versuch es erneut."
     },
@@ -10493,7 +10493,7 @@
       "open": "Aus Archiv importieren",
       "openNamed": "Aus {name} importieren",
       "title": "Aus {name} importieren",
-      "description": "Nach Namen suchen, dann die Dokumente anhaken, die HealthLog übernehmen soll.",
+      "description": "Nach Namen suchen, dann die Dokumente anhaken, die Medzs übernehmen soll.",
       "sourceLabel": "Archiv",
       "searchLabel": "Dokumentname",
       "searchPlaceholder": "Nach Namen suchen",
@@ -10506,8 +10506,8 @@
       "empty": "{name} hat keine Dokumente zum Anzeigen.",
       "noMatch": "Keine passenden Dokumente.",
       "loadMore": "Mehr laden",
-      "stateImported": "In HealthLog",
-      "stateDeleted": "In HealthLog gelöscht",
+      "stateImported": "In Medzs",
+      "stateDeleted": "In Medzs gelöscht",
       "selectedCount": "{count} von höchstens {max} ausgewählt",
       "importAction": "{count} importieren",
       "importing": "Import läuft, ein Dokument nach dem anderen …",
@@ -10519,9 +10519,9 @@
         "working": "Wird importiert …",
         "imported": "Importiert",
         "importedLinked": "Importiert und verknüpft",
-        "duplicate": "Schon in HealthLog",
-        "duplicateLinked": "Schon in HealthLog, jetzt verknüpft",
-        "deleted": "In HealthLog gelöscht, bleibt gelöscht"
+        "duplicate": "Schon in Medzs",
+        "duplicateLinked": "Schon in Medzs, jetzt verknüpft",
+        "deleted": "In Medzs gelöscht, bleibt gelöscht"
       },
       "errors": {
         "unavailable": "Dokumentarchive sind auf diesem Server nicht freigeschaltet.",
@@ -10539,9 +10539,9 @@
         "invalidAddress": "Gib die vollständige Adresse ein, beginnend mit https:// oder http://.",
         "organizationRequired": "Gib die Organisations-ID aus Papra ein.",
         "tokenRequired": "Gib das API-Token ein. Eine neue Adresse braucht es erneut.",
-        "fileTooLarge": "Die Datei ist größer, als HealthLog annimmt.",
+        "fileTooLarge": "Die Datei ist größer, als Medzs annimmt.",
         "quotaExceeded": "Dein Dokumentenspeicher ist voll.",
-        "fileType": "HealthLog nimmt diesen Dateityp nicht an.",
+        "fileType": "Medzs nimmt diesen Dateityp nicht an.",
         "uploadLimit": "Das stündliche Upload-Limit ist erreicht. Versuche es später erneut.",
         "uploadBusy": "Andere Uploads laufen noch. Versuche es gleich noch einmal.",
         "moduleDisabled": "Dokumente sind in den Einstellungen ausgeschaltet.",
@@ -10555,7 +10555,7 @@
     }
   },
   "selfDescription": {
-    "dataPosture": "HealthLog wird selbst gehostet: Deine Gesundheitsdaten liegen in der Datenbank deiner eigenen Instanz. Notizen und andere Freitexte, Dokumente, Fragebogen-Antworten, von der KI geschriebene Texte und Zugangs-Tokens sind im Ruhezustand verschlüsselt; Messwerte, Laborwerte, Medikamentennamen und Stimmungswerte werden unverschlüsselt gespeichert und sind so sicher wie dein Server. KI-Funktionen senden Daten nur an den KI-Anbieter, der für dein Konto eingerichtet ist, und es gibt keine Drittanbieter-Analyse deiner Gesundheitsdaten."
+    "dataPosture": "Medzs wird selbst gehostet: Deine Gesundheitsdaten liegen in der Datenbank deiner eigenen Instanz. Notizen und andere Freitexte, Dokumente, Fragebogen-Antworten, von der KI geschriebene Texte und Zugangs-Tokens sind im Ruhezustand verschlüsselt; Messwerte, Laborwerte, Medikamentennamen und Stimmungswerte werden unverschlüsselt gespeichert und sind so sicher wie dein Server. KI-Funktionen senden Daten nur an den KI-Anbieter, der für dein Konto eingerichtet ist, und es gibt keine Drittanbieter-Analyse deiner Gesundheitsdaten."
   },
   "customMetrics": {
     "sectionTitle": "Eigene Metriken",
@@ -10921,7 +10921,7 @@
     "invite": {
       "title": "Jemanden einladen",
       "description": "Vor der Zustimmung wird nichts geteilt.",
-      "needsAccount": "Die Person braucht ein eigenes HealthLog-Konto auf dieser Instanz und findet die Einladung dort unter Einstellungen → Geteilter Zugriff.",
+      "needsAccount": "Die Person braucht ein eigenes Medzs-Konto auf dieser Instanz und findet die Einladung dort unter Einstellungen → Geteilter Zugriff.",
       "identifierLabel": "Benutzername oder E-Mail",
       "identifierPlaceholder": "Der Name, mit dem sie sich anmeldet",
       "identifierHint": "Die Person braucht ein Konto auf dieser Instanz. An eine E-Mail-Adresse ohne Registrierung lässt sich keine Einladung schicken.",

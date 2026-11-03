@@ -1,6 +1,6 @@
 {
-  "name": "HealthLog",
-  "short_name": "HealthLog",
+  "name": "Medzs",
+  "short_name": "Medzs",
   "description": "Personal health tracking — weight, blood pressure, medications",
   "id": "/?source=pwa",
   "scope": "/",

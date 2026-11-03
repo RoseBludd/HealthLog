@@ -40,9 +40,9 @@ const POLICY_VERSION = "1.37.12";
 const LAST_UPDATED = "2026-08-11";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung / Privacy Policy — HealthLog",
+  title: "Datenschutzerklärung / Privacy Policy — Medzs",
   description:
-    "Wie HealthLog personenbezogene Gesundheitsdaten verarbeitet, Auftragsverarbeiter, DSGVO-Rechte und die EU-MDR-Medizinprodukte-Grenze. Bilingual DE/EN.",
+    "Wie Medzs personenbezogene Gesundheitsdaten verarbeitet, Auftragsverarbeiter, DSGVO-Rechte und die EU-MDR-Medizinprodukte-Grenze. Bilingual DE/EN.",
   robots: { index: true, follow: true },
 };
 
@@ -185,7 +185,7 @@ export default function PrivacyPage() {
             href="/"
             className="text-foreground hover:text-primary inline-flex min-h-11 items-center text-sm font-semibold tracking-tight"
           >
-            HealthLog
+            Medzs
           </Link>
           <Link
             href="/auth/login"
@@ -351,7 +351,7 @@ export default function PrivacyPage() {
           bodyDe={
             <>
               <p>
-                HealthLog ist eine quelloffene, selbst-hostbare Anwendung zur
+                Medzs ist eine quelloffene, selbst-hostbare Anwendung zur
                 persönlichen Gesundheitsprotokollierung. Der Quellcode wird
                 unter der PolyForm Noncommercial License 1.0.0 auf{" "}
                 <a
@@ -364,7 +364,7 @@ export default function PrivacyPage() {
                 </a>{" "}
                 veröffentlicht. Diese Erklärung beschreibt, wie die Instanz,
                 über die Sie diese Seite abrufen, und die zugehörige
-                iOS-Anwendung <em>HealthLog for iOS</em> (Bundle-ID{" "}
+                iOS-Anwendung <em>Medzs for iOS</em> (Bundle-ID{" "}
                 <code className="bg-muted rounded px-1 py-0.5 text-xs">
                   dev.healthlog.app
                 </code>
@@ -386,7 +386,7 @@ export default function PrivacyPage() {
           bodyEn={
             <>
               <p>
-                HealthLog is an open-source, self-hostable personal-health-
+                Medzs is an open-source, self-hostable personal-health-
                 tracking application. Source code is published at{" "}
                 <a
                   href="https://github.com/MBombeck/HealthLog"
@@ -398,7 +398,7 @@ export default function PrivacyPage() {
                 </a>{" "}
                 under the PolyForm Noncommercial License 1.0.0. This policy
                 describes how the instance serving this page and the companion
-                iOS application <em>HealthLog for iOS</em> (bundle identifier{" "}
+                iOS application <em>Medzs for iOS</em> (bundle identifier{" "}
                 <code className="bg-muted rounded px-1 py-0.5 text-xs">
                   dev.healthlog.app
                 </code>
@@ -427,7 +427,7 @@ export default function PrivacyPage() {
           bodyDe={
             <>
               <p>
-                HealthLog speichert Beobachtungen, die der Nutzer selbst
+                Medzs speichert Beobachtungen, die der Nutzer selbst
                 erfasst, sowie Gesundheitssignale, die der Nutzer ausdrücklich
                 über eine Integration verbunden hat. Die folgenden Kategorien
                 sind für den veröffentlichten Funktionsumfang abschließend.
@@ -483,19 +483,19 @@ export default function PrivacyPage() {
               </h3>
               <p>
                 Wenn der Nutzer der iOS-Anwendung Lesezugriff auf Apple
-                HealthKit erteilt, liest HealthLog Stichproben der unten
+                HealthKit erteilt, liest Medzs Stichproben der unten
                 aufgeführten Identifier. Apple Health verwaltet HealthKit-Daten
                 auf dem Gerät und kann sie nach den Apple-Einstellungen des
                 Nutzers über dessen Apple-Konto synchronisieren. Das ist
                 Apple-seitiges HealthKit-Verhalten und keine iCloud- oder
-                CloudKit-Speicherung durch HealthLog. Die iOS-Anwendung
+                CloudKit-Speicherung durch Medzs. Die iOS-Anwendung
                 überträgt relevante Stichproben über HTTPS (TLS 1.3,
-                Zertifikat-Pinning) an den HealthLog-Server (Endpunkt{" "}
+                Zertifikat-Pinning) an den Medzs-Server (Endpunkt{" "}
                 <code className="bg-muted rounded px-1 py-0.5 text-xs">
                   POST /api/measurements
                 </code>
                 ), damit die Web-Oberfläche dieselben Verläufe darstellen kann
-                wie das iPhone. HealthLog synchronisiert dabei die unterstützte
+                wie das iPhone. Medzs synchronisiert dabei die unterstützte
                 Standarddarstellung der Herzfrequenz für Trends und
                 Workout-Kontext. Das interne Experiment für einen ungefilterten
                 Roh-Herzfrequenzstrom ist in dieser öffentlichen Version nicht
@@ -597,7 +597,7 @@ export default function PrivacyPage() {
                 2.4 Withings-Synchronisation (optional)
               </h3>
               <p>
-                Verbindet der Nutzer ein Withings-Konto, speichert HealthLog die
+                Verbindet der Nutzer ein Withings-Konto, speichert Medzs die
                 OAuth-Refresh- und -Access-Token (spalten- weise verschlüsselt)
                 sowie die Withings-Nutzerkennung. Webhook-getriebene
                 Folgesynchronisierungen ziehen Körper- gewicht, Fettanteil,
@@ -634,7 +634,7 @@ export default function PrivacyPage() {
               </h3>
               <p>
                 Ein Profilbild sowie für den Dokumententresor ausdrücklich
-                ausgewählte Fotos, Scans und PDFs werden zum HealthLog-Server
+                ausgewählte Fotos, Scans und PDFs werden zum Medzs-Server
                 hochgeladen und dem Konto zugeordnet. Beim Schnell-Erfassen von
                 Medikamenten oder Laborwerten bleibt das Quellbild dagegen auf
                 dem Gerät: Apple Vision erkennt Text lokal, und nur die vom
@@ -657,7 +657,7 @@ export default function PrivacyPage() {
               <ul className="list-disc space-y-1 pl-5">
                 <li>
                   <strong>Server-verwaltet:</strong> Die Daten gehen zuerst an
-                  den konfigurierten HealthLog-Server und von dort an dessen
+                  den konfigurierten Medzs-Server und von dort an dessen
                   eingerichtetes Anthropic-, OpenAI-, lokales, ChatGPT-OAuth-
                   oder generisch OpenAI-kompatibles Ziel. Ein lokales oder
                   generisches Ziel wird vom Betreiber festgelegt und kann einer
@@ -668,7 +668,7 @@ export default function PrivacyPage() {
                   direkt an OpenAI, Anthropic, Google Gemini oder einen vom
                   Nutzer angegebenen HTTPS-Endpunkt mit OpenAI-kompatibler API.
                   Der API-Schlüssel bleibt im iOS-Keychain und wird nicht an den
-                  HealthLog-Server gesendet.
+                  Medzs-Server gesendet.
                 </li>
                 <li>
                   <strong>Auf dem Gerät:</strong> Apple Foundation Models und
@@ -781,7 +781,7 @@ export default function PrivacyPage() {
           bodyEn={
             <>
               <p>
-                HealthLog is designed to record observations the user enters
+                Medzs is designed to record observations the user enters
                 themselves and to consume health signals the user has explicitly
                 connected through a third-party integration. The categories
                 below are exhaustive for the released feature set.
@@ -837,18 +837,18 @@ export default function PrivacyPage() {
               </h3>
               <p>
                 When the user grants the iOS application read access to Apple
-                HealthKit, HealthLog reads samples for the identifiers listed
+                HealthKit, Medzs reads samples for the identifiers listed
                 below. Apple Health manages HealthKit data on the device and may
                 sync it through the user&apos;s Apple account according to Apple
                 platform settings. That is Apple-managed HealthKit behaviour,
-                not iCloud or CloudKit storage by HealthLog. The iOS application
-                copies relevant samples to the HealthLog server over HTTPS (TLS
+                not iCloud or CloudKit storage by Medzs. The iOS application
+                copies relevant samples to the Medzs server over HTTPS (TLS
                 1.3, certificate pinning) via{" "}
                 <code className="bg-muted rounded px-1 py-0.5 text-xs">
                   POST /api/measurements
                 </code>{" "}
                 so the web surface can render the same trends as the iPhone.
-                HealthLog syncs the supported default heart-rate representation
+                Medzs syncs the supported default heart-rate representation
                 used for trends and workout context. The internal unfiltered
                 raw-heart-rate experiment is unavailable in this public build;
                 it is neither advertised nor collected. Transit to an AI
@@ -948,7 +948,7 @@ export default function PrivacyPage() {
                 2.4 Withings sync (optional)
               </h3>
               <p>
-                When the user connects a Withings account, HealthLog stores the
+                When the user connects a Withings account, Medzs stores the
                 OAuth refresh and access tokens (encrypted at the column level)
                 and the user&apos;s Withings identifier. Subsequent
                 webhook-driven syncs pull body weight, fat ratio, fat-free mass,
@@ -983,7 +983,7 @@ export default function PrivacyPage() {
               </h3>
               <p>
                 A profile image and photos, scans, or PDFs explicitly selected
-                for the document vault are uploaded to the HealthLog server and
+                for the document vault are uploaded to the Medzs server and
                 linked to the account. Medication and lab quick-entry work
                 differently: Apple Vision recognises text on the device, the
                 source image is not uploaded, and only rows the user reviews,
@@ -1005,7 +1005,7 @@ export default function PrivacyPage() {
               <ul className="list-disc space-y-1 pl-5">
                 <li>
                   <strong>Server-managed:</strong> data first reaches the
-                  configured HealthLog server and is then sent to that
+                  configured Medzs server and is then sent to that
                   server&apos;s configured Anthropic, OpenAI, local, ChatGPT
                   OAuth, or generic OpenAI-compatible destination. A local or
                   generic destination is chosen by the operator and may have its
@@ -1015,7 +1015,7 @@ export default function PrivacyPage() {
                   <strong>Bring your own key (BYO):</strong> the iPhone sends
                   directly to OpenAI, Anthropic, Google Gemini, or a
                   user-specified HTTPS OpenAI-compatible endpoint. The API key
-                  remains in the iOS Keychain and is not sent to the HealthLog
+                  remains in the iOS Keychain and is not sent to the Medzs
                   server.
                 </li>
                 <li>
@@ -1301,8 +1301,8 @@ export default function PrivacyPage() {
                   roleEn="Apple-managed HealthKit on the device and Apple Push Notification service (APNs) when notifications are enabled."
                   dataDe="HealthKit-Zugriff bleibt lokal. APNs empfängt Geräte-Token, Bundle-ID und Notification-Payload."
                   dataEn="HealthKit access is local to the device. APNs receives a device token, the application bundle identifier, and the notification payload."
-                  locationDe="Apple verwaltet HealthKit-Daten nach den Apple-Konto- und Health-Einstellungen des Nutzers. Das ist keine iCloud- oder CloudKit-Speicherung durch HealthLog."
-                  locationEn="Apple manages HealthKit data under the user's Apple-account and Health settings. This is not iCloud or CloudKit storage by HealthLog."
+                  locationDe="Apple verwaltet HealthKit-Daten nach den Apple-Konto- und Health-Einstellungen des Nutzers. Das ist keine iCloud- oder CloudKit-Speicherung durch Medzs."
+                  locationEn="Apple manages HealthKit data under the user's Apple-account and Health settings. This is not iCloud or CloudKit storage by Medzs."
                   policyUrl="https://www.apple.com/legal/privacy/"
                 />
                 <SubProcessor
@@ -1341,8 +1341,8 @@ export default function PrivacyPage() {
                   roleEn="Hardware host for the application server and the PostgreSQL database."
                   dataDe="Festplatten- und Netzwerkverkehr zwischen den vom Betreiber kontrollierten virtuellen Maschinen und dem öffentlichen Internet."
                   dataEn="Disk and network traffic between the operator-controlled virtual machines and the public internet."
-                  locationDe="Deutschland (Europäische Union). Sämtliche HealthLog-Anwendungsdaten liegen auf Hetzner-Infrastruktur unter deutscher Gerichtsbarkeit."
-                  locationEn="Germany (European Union). All HealthLog application data lives on Hetzner-hosted infrastructure under German jurisdiction."
+                  locationDe="Deutschland (Europäische Union). Sämtliche Medzs-Anwendungsdaten liegen auf Hetzner-Infrastruktur unter deutscher Gerichtsbarkeit."
+                  locationEn="Germany (European Union). All Medzs application data lives on Hetzner-hosted infrastructure under German jurisdiction."
                   policyUrl="https://www.hetzner.com/legal/privacy-policy"
                 />
               </ul>
@@ -1418,9 +1418,9 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <span className="text-foreground font-medium">
-                  Kein HealthLog-iCloud-Speicher
+                  Kein Medzs-iCloud-Speicher
                 </span>{" "}
-                — HealthLog speichert Server-Datenbank, lokale Gesundheits-
+                — Medzs speichert Server-Datenbank, lokale Gesundheits-
                 caches, Offline-Outbox, ECG- und Workout-Payloads,
                 KI-Transkript-Cache, Medikamentenplaner-Datenbank sowie Widget-
                 und Watch-Snapshots weder in iCloud noch in CloudKit. Lokale
@@ -1499,9 +1499,9 @@ export default function PrivacyPage() {
               </li>
               <li>
                 <span className="text-foreground font-medium">
-                  No HealthLog iCloud storage
+                  No Medzs iCloud storage
                 </span>{" "}
-                — HealthLog does not store its server database, local health
+                — Medzs does not store its server database, local health
                 caches, offline outbox, ECG or workout payloads, AI transcript
                 cache, medication-reminder scheduler database, or widget and
                 Watch health snapshots in iCloud or CloudKit. Local
@@ -1509,7 +1509,7 @@ export default function PrivacyPage() {
                 storage, disable CloudKit where applicable, and are explicitly
                 excluded from device backup. Apple Health may separately sync
                 HealthKit data under Apple&apos;s platform controls; that is
-                Apple-managed behaviour, not HealthLog cloud storage.
+                Apple-managed behaviour, not Medzs cloud storage.
               </li>
               <li>
                 <span className="text-foreground font-medium">Deletion</span> —
@@ -1684,7 +1684,7 @@ export default function PrivacyPage() {
           bodyDe={
             <>
               <p>
-                HealthLog ist <strong>kein Medizinprodukt</strong> im Sinne der
+                Medzs ist <strong>kein Medizinprodukt</strong> im Sinne der
                 EU-Verordnung 2017/745 (MDR). Die Anwendung erfasst und
                 visualisiert Beobachtungen, die der Nutzer selbst eingegeben
                 hat; sie diagnostiziert, behandelt, verordnet oder überwacht
@@ -1702,7 +1702,7 @@ export default function PrivacyPage() {
               </p>
               <p>
                 Für medizinische Beratung muss eine approbierte ärztliche
-                Fachkraft konsultiert werden. HealthLog soll diese Beratung
+                Fachkraft konsultiert werden. Medzs soll diese Beratung
                 unterstützen, indem es selbst erfasste Daten aufbereitet — nicht
                 ersetzen.
               </p>
@@ -1711,7 +1711,7 @@ export default function PrivacyPage() {
           bodyEn={
             <>
               <p>
-                HealthLog is <strong>not a medical device</strong> within the
+                Medzs is <strong>not a medical device</strong> within the
                 meaning of EU Regulation 2017/745 (MDR). The application records
                 and displays observations the user has entered; it does not
                 diagnose, treat, prescribe, or monitor a specific medical
@@ -1728,7 +1728,7 @@ export default function PrivacyPage() {
               </p>
               <p>
                 For medical advice the user must consult a licensed clinician.
-                HealthLog is intended to support that conversation by surfacing
+                Medzs is intended to support that conversation by surfacing
                 self-tracked data — not to replace it.
               </p>
             </>
@@ -1804,7 +1804,7 @@ export default function PrivacyPage() {
                 </li>
               </ul>
               <p>
-                <strong>Tracking: Nein.</strong> HealthLog verwendet keine
+                <strong>Tracking: Nein.</strong> Medzs verwendet keine
                 Werbung, kein anwendungsübergreifendes Tracking, keine
                 Werbemessung und kein Drittanbieter-Analytics-SDK. Optionale
                 KI-Anbieter erhalten Daten nur für die vom Nutzer ausgelöste
@@ -1878,7 +1878,7 @@ export default function PrivacyPage() {
                 </li>
               </ul>
               <p>
-                <strong>Tracking: No.</strong> HealthLog uses no advertising,
+                <strong>Tracking: No.</strong> Medzs uses no advertising,
                 cross-app tracking, advertising measurement, or third-party
                 analytics SDK. Optional AI providers receive data only for the
                 app function the user invokes, not for advertising or tracking.
@@ -1894,7 +1894,7 @@ export default function PrivacyPage() {
           titleEn="Children"
           bodyDe={
             <p>
-              HealthLog richtet sich nicht an Kinder unter 16 Jahren. Die
+              Medzs richtet sich nicht an Kinder unter 16 Jahren. Die
               Anwendung sollte nicht ohne nachweisbare elterliche Aufsicht von
               Personen unter 16 Jahren verwendet werden. Der Betreiber erhebt
               wissentlich keine personenbezogenen Daten von Kindern unter 16
@@ -1903,7 +1903,7 @@ export default function PrivacyPage() {
           }
           bodyEn={
             <p>
-              HealthLog is not directed at children under the age of 16. The
+              Medzs is not directed at children under the age of 16. The
               application should not be used by anyone under 16 without
               verifiable parental supervision. The operator does not knowingly
               collect personal data from children under 16; if such data is
@@ -1965,7 +1965,7 @@ export default function PrivacyPage() {
                 </a>
                 . Bitte das E-Mail-Betreff mit{" "}
                 <em>
-                  &quot;HealthLog DSGVO — &lt;Auskunft | Löschung |
+                  &quot;Medzs DSGVO — &lt;Auskunft | Löschung |
                   Übertragbarkeit&gt;&quot;
                 </em>{" "}
                 kennzeichnen. Erste Antwort innerhalb von 30 Tagen gemäß Art. 12
@@ -2014,7 +2014,7 @@ export default function PrivacyPage() {
                 </a>
                 . Subject line:{" "}
                 <em>
-                  &quot;HealthLog GDPR — &lt;Access | Erasure |
+                  &quot;Medzs GDPR — &lt;Access | Erasure |
                   Portability&gt;&quot;
                 </em>
                 . First reply within 30 days per Art. 12 (3) GDPR.
@@ -2046,7 +2046,7 @@ export default function PrivacyPage() {
           data-slot="privacy-footer"
         >
           <p>
-            HealthLog — source-available under the{" "}
+            Medzs — source-available under the{" "}
             <a
               href="https://github.com/MBombeck/HealthLog/blob/main/LICENSE"
               target="_blank"
@@ -2066,7 +2066,7 @@ export default function PrivacyPage() {
               className="hover:text-foreground hover:underline"
               data-slot="privacy-about-link"
             >
-              About HealthLog — credits &amp; data attributions
+              About Medzs — credits &amp; data attributions
             </Link>
           </p>
         </footer>

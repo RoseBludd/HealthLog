@@ -580,7 +580,7 @@ export function SidebarNav() {
             <Logo className="text-primary shrink-0" size={24} />
             {!collapsed && (
               <span className="text-lg font-bold tracking-tight">
-                HealthLog
+                Medzs
               </span>
             )}
           </Link>

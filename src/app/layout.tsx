@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "HealthLog",
+  title: "Medzs",
   description:
     "Self-hosted health tracker — weight, blood pressure, glucose, mood, medications. Withings + Apple Health sync, transparent derived wellness metrics, AI Insights you own.",
   manifest: "/manifest.json",
@@ -30,16 +30,16 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "HealthLog",
+    title: "Medzs",
   },
   openGraph: {
-    title: "HealthLog",
+    title: "Medzs",
     description:
       "Self-hosted health tracker. Weight, blood pressure, glucose, mood, medications. Withings + Apple Health sync. AI Insights you own.",
     type: "website",
     locale: "en_US",
     alternateLocale: ["de_DE", "fr_FR", "es_ES", "it_IT", "pl_PL"],
-    siteName: "HealthLog",
+    siteName: "Medzs",
     // Drop-in OG asset. Replace with a 1200×630 dashboard-screenshot
     // capture when an official one ships; the logo render keeps the
     // unfurl from rendering a blank tile in the meantime.
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
         url: "/logo-readme.png",
         width: 1000,
         height: 1000,
-        alt: "HealthLog — your health data, your server",
+        alt: "Medzs — your health data, your server",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HealthLog",
+    title: "Medzs",
     description:
       "Self-hosted health tracker. Weight, blood pressure, glucose, mood, medications. Withings + Apple Health sync. AI Insights you own.",
     images: ["/logo-readme.png"],
